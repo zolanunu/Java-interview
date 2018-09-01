@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class PatternMatch {
 	public boolean match(char[] str, char[] pattern) {

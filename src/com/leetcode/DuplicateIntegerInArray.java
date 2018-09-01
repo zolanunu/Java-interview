@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class DuplicateIntegerInArray {
 	public static boolean duplicate(int[] a, int length, int[] duplication) {

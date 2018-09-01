@@ -1,4 +1,4 @@
-package com.java.java_base;
+package com.leetcode;
 
 public class Employee implements Worker {
 	private String name; // Ô±¹¤ĞÕÃû

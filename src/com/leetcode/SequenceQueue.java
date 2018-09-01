@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.java.leetcode.coding;
+package com.leetcode;
 
 import java.io.Serializable;
 import java.util.Arrays;

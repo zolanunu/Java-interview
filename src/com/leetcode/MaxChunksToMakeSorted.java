@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class MaxChunksToMakeSorted {
 	// 769.Max Chunks To Make Sorted

@@ -1,5 +1,4 @@
-package com.java.java_base;
-
+package com.leetcode;
 public class ThreadPacker extends Thread {
 	ProductShoes lrQueue;
 	public ThreadPacker(ProductShoes lrQueue) {

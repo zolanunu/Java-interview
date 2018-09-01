@@ -1,4 +1,4 @@
-package com.java.java_base;
+package com.leetcode;
 
 public interface ReceiveReports {
 	public void receiveReport(Workers work, String report);

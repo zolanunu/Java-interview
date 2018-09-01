@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class MaxiLengthSubArray {
 	public static int[][] findLength(int[] A, int[] B) {

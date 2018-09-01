@@ -1,5 +1,4 @@
-package com.java.leetcode.coding;
-
+package com.leetcode;
 public class TeemoAttacking {
 	public int findPoisonedDuration(int[] timeSeries, int duration) {
 		int now = 0,  ans = 0;

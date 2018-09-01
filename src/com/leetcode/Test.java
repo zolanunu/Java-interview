@@ -1,5 +1,4 @@
-package com.java.java_base;
-
+package com.leetcode;
 public class Test {
 	public static void main(String[] args) {
 		Worker employee = new Employee("Frank");// 定义一个员工

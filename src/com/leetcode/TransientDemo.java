@@ -1,8 +1,7 @@
 /**
  * 
  */
-package com.java.java_base;
-
+package com.leetcode;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

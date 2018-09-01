@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.java.leetcode.coding;
+package com.leetcode;
 
 import java.util.ArrayDeque;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class MyArrayStack<T> implements MyStack<T> {
 	private Object[] objs = new Object[16];

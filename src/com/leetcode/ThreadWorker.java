@@ -1,5 +1,4 @@
-package com.java.java_base;
-
+package com.leetcode;
 public class ThreadWorker extends Thread {
 	ProductShoes lrQueue;
 	public ThreadWorker(ProductShoes lrQueue) {

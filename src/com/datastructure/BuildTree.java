@@ -3,7 +3,7 @@
  */
 package com.datastructure;
 
-import com.java.leetcode.coding.TreeNode;
+import com.leetcode.TreeNode;
 
 /**
  * @author zolanunu

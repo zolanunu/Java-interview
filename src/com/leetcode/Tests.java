@@ -1,5 +1,4 @@
-package com.java.java_base;
-
+package com.leetcode;
 public class Tests {
 	public static void main(String[] args) {
 		Bosses boss = new Bosses();

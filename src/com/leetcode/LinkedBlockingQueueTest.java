@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.java.java_base;
+package com.leetcode;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

@@ -1,5 +1,4 @@
-package com.java.leetcode.coding;
-
+package com.leetcode;
 public class StringStreamAppearence {
 	int[] hashtable=new int[256];
 	StringBuffer s=new StringBuffer();

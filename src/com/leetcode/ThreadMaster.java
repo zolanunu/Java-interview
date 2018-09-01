@@ -1,5 +1,4 @@
-package com.java.java_base;
-
+package com.leetcode;
 public class ThreadMaster extends Thread {
 	ProductShoes lrQueue;
 	public ThreadMaster(ProductShoes lrQueue) {

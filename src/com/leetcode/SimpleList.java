@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 import org.omg.CosNaming.NamingContextExtPackage.AddressHelper;
 

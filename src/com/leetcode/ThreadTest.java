@@ -1,5 +1,4 @@
-package com.java.java_base;
-
+package com.leetcode;
 public class ThreadTest {
 	public static void main(String[] args) {
 		MyRunnable r = new MyRunnable();

@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class NumSubArrayProductLessThanK {
 	public int numSubArrayProductLessThanK(int[] nums, int k) {

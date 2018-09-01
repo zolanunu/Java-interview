@@ -1,5 +1,4 @@
-package com.java.leetcode.coding;
-
+package com.leetcode;
 public class StringStreamFirstAppear {
 	
 	private int[] occurence = new int[256]; // 利用一个int型数组表示256个字符，这个数组初值置为-1.

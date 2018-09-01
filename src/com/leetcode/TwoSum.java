@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 /**
  * an array of integers, return the indices of two numbers such that they add up a target
  * each input would have exactly one solution, and you may not use the same element twice.

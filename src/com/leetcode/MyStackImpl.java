@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class MyStackImpl {
 	// 10进制的数num转为n进制

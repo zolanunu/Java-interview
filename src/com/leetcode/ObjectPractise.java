@@ -1,4 +1,4 @@
-package com.java.java_base;
+package com.leetcode;
 
 public class ObjectPractise extends Object implements Cloneable{
 	// 明确的继承一个Object类

@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

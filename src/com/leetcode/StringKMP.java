@@ -1,5 +1,4 @@
-package com.java.leetcode.coding;
-
+package com.leetcode;
 public class StringKMP {
 	/**
 	 * 字符串中的模式匹配问题 在主串中找模式串第一次出现的第一个字符的下标

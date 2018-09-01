@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class QuickSort {
 	public static void sort(int[] a){//Çý¶¯³ÌÐò

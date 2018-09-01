@@ -1,5 +1,4 @@
-package com.java.java_base;
-
+package com.leetcode;
 public class TestForReflection {
 	public void sayHello() {
 		System.out.println("hello");

@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public interface MyStack<T> {
 	boolean isEmpty();

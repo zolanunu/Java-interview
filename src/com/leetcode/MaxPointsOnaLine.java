@@ -1,7 +1,9 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
+
+import com.leetcode.PushBox.Point;
 
 public class MaxPointsOnaLine {
 	public int maxPoints(Point[] points) {

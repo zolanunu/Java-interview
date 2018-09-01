@@ -1,5 +1,4 @@
-package com.java.java_base;
-
+package com.leetcode;
 public interface Workers {
 	public void work(String taskName);
 	public void setReceiveReport(ReceiveReports boss);

@@ -474,6 +474,23 @@ public class TreeNodeList {
         if(tl - tr>1||tl-tr<-1) return -1;
         return Math.max(tl,tr)+1;
     }
+    
+    // 只需要遍历一次的解法，判断是否是平衡二叉树
+    public boolean isBanlance(TreeNode rt, int pDepth) {
+    	if(rt == null) {
+    		pDepth = 0;
+    		return true;
+    	}
+    	int left = 0, right = 0;
+    	if(isBanlance(rt.left, left) && isBanlance(rt.right, right)) {
+    		int diff = left - right;
+    		if(diff <= 1 || diff >= -1) {
+    			pDepth = 1 + ((left > right) ? left : right);
+    			return true;
+    		}
+    	}
+    	return false;
+    }
     // 求树的宽度
     public int treeWidth(TreeNode bt) {
     	LinkedList<TreeNode> linkedList = new LinkedList<>();
@@ -668,8 +685,133 @@ public class TreeNodeList {
     	}
     	return isPostArray(arr, s, less) && isPostArray(arr, more, e-1);
     }
+    // 二叉搜索树的第K大节点
+    int index = 0;
+    public TreeNode kThNode(TreeNode root, int k) {
+    	if(root != null) {
+    		TreeNode node = kThNode(root.left, k);
+    		if(node != null) {
+    			return node;
+    		}
+    		index++;
+    		if(index == k) {
+    			return root;
+    		}
+    		node = kThNode(root.right, k);
+    		if(node != null) {
+    			return node;
+    		}
+    	}
+    	return null;
+    }
+    
+    // 二叉树的高度
+    // 二叉树的深度
+    public int treeDepth(TreeNode rt) {
+    	if(rt == null) {
+    		return 0;
+    	}
+    	int leftD = treeDepth(rt.left);
+    	int rightD = treeDepth(rt.right);
+    	return leftD > rightD ? (leftD+1) : (rightD+1);
+    }
+    
+    
     
     // TO DO : 反转二叉树
+    public TreeNode invertTree(TreeNode root) {
+    	if(root == null) {
+    		return null;
+    	}
+    	if(root.left != null) {
+    		invertTree(root.left);
+    	}
+    	if(root.right != null) {
+    		invertTree(root.right);
+    	}
+    	TreeNode temp = root.left;
+    	root.left = root.right;
+    	root.right = temp;
+    	return root;
+    }
+    
+    // 之字形打印二叉樹
+    // 第一行按照从左往右，第二层按照从右往左的顺序打印，第三行按照从左往右打印，依次类推
+    public ArrayList<ArrayList<Integer>> printZhi(TreeNode tr) {
+    	ArrayList<ArrayList<Integer>> result = new ArrayList<>();
+    	if(tr == null) {
+    		return null;
+    	}
+    	Queue<TreeNode> queue = new LinkedList<TreeNode>();
+    	int rows = 1;
+    	queue.add(tr);
+    	while(!queue.isEmpty()) {
+    		ArrayList<Integer> list = new ArrayList<>();
+    		int size = queue.size();
+    		for(int i = 0; i < size; i++) {
+    			TreeNode treeNode = queue.poll();
+    			if(rows % 2 == 0) {
+    				list.add(0, treeNode.value);
+    				// 将元素插入指定位置（头部），就相当于倒序了
+    			} else {
+    				list.add(treeNode.value);
+    				// 将元素插入尾部
+    			}
+    			if(treeNode.left != null) {
+    				queue.offer(treeNode.left);
+    			}
+    			if(treeNode.right != null) {
+    				queue.offer(treeNode.right);
+    			}
+    		}
+    		result.add(list);
+    		rows++;
+    	}
+    	return result;
+    }
+    
+    // 二叉树是否对称
+    public boolean isSymmertrical(TreeNode rt) {
+    	if(rt == null) {
+    		return true;
+    	}
+    	return judgeChild(rt.left, rt.right);
+    }
+    
+    public boolean judgeChild(TreeNode l, TreeNode r) {
+    	if(l == null && r != null) {
+    		return false;
+    	}
+    	if(l != null && r == null) {
+    		return false;
+    	}
+    	if(l.value != r.value) {
+    		return false;
+    	}
+    	return judgeChild(l.left, r.right) && judgeChild(l.right, r.left);
+    }
+    
+    // 打印二叉树上所有的路径，使路径上所有节点之和刚好等于某个整数
+    public ArrayList<ArrayList<Integer>> findPath(TreeNode rt, int target) {
+    	ArrayList<ArrayList<Integer>> listAll = new ArrayList<ArrayList<Integer>>();
+    	ArrayList<Integer> list = new ArrayList<Integer>();
+    	return findPath(rt, target, listAll, list);
+    }
+    public ArrayList<ArrayList<Integer>> findPath(TreeNode rt, int target, ArrayList<ArrayList<Integer>> listAll, ArrayList<Integer> list) {
+    	if(rt == null) {
+    		return listAll;
+    	}
+    	list.add(rt.value);
+    	target = target - rt.value;
+    	if(target == 0 && rt.left == null && rt.right == null) {
+    		listAll.add(list);
+    	}
+    	findPath(rt.left, target, listAll, list);
+    	findPath(rt.right, target, listAll, list);
+    	list.remove(list.size()-1);
+    	return listAll;
+    }
+    
     public static void main(String[] args) {
     	int[] arr = new int[] { 5, 3, 4, 1, 7, 8, 2, 6, 0, 9 };
         TreeNodeList binaryTreeList = new TreeNodeList();

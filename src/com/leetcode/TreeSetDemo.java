@@ -1,5 +1,4 @@
-package com.java.java_base;
-
+package com.leetcode;
 import java.util.TreeSet;
 /**
  * A:自然排序：要在自定义类中实现Comparerable<T>接口  ，并且重写compareTo方法

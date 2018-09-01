@@ -34,10 +34,7 @@ public class WeirdLetter {
 				len+=tot;
 			}
 		}
-		System.out.println(n+1, len);
+		System.out.println(n+1 + " " + len);
 		in.close();
-
-	}
-	
-	
+	}	
 }

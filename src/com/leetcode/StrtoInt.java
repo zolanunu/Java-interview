@@ -1,5 +1,4 @@
-package com.java.leetcode.coding;
-
+package com.leetcode;
 public class StrtoInt {
 	/**
 	 * 可能的输入：

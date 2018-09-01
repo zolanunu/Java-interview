@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class SimpleSelectSort {
 	public static int selectMink(int[] a, int n, int i) {

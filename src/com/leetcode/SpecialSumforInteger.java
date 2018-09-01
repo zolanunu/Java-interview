@@ -1,5 +1,4 @@
-package com.java.leetcode.coding;
-
+package com.leetcode;
 public class SpecialSumforInteger {
 	public static int add(int n, int m) {
 		int s, k;

@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class RobotSport {
 	public int move(int threshold, int rows, int cols) {

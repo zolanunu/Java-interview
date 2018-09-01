@@ -1,4 +1,4 @@
-package com.java.leetcode.dynamicprograme;
+package com.leetcode.DP;
 
 public class Test {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class BuyOrSell {
 	public int maxProfit(int[] prices, int fee) {

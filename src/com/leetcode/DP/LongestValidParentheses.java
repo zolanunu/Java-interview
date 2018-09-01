@@ -1,4 +1,4 @@
-package com.java.leetcode.dynamicprograme;
+package com.leetcode.DP;
 
 import java.util.Deque;
 import java.util.LinkedList;

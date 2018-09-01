@@ -1,4 +1,4 @@
-package com.java.java_base;
+package com.leetcode;
 
 public class Counter {
 	public volatile static int count = 0;
@@ -19,7 +19,7 @@ public class Counter {
 					// TODO Auto-generated method stub
 					Counter.inc();
 				}
-			}).start();;
+			}).start();
 		}
 		System.out.println("count = " + Counter.count);
 	}

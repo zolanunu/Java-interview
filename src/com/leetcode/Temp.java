@@ -1,5 +1,4 @@
-package com.java.leetcode.coding;
-
+package com.leetcode;
 public class Temp {
 	String string = "";
 	public Temp(String s) {

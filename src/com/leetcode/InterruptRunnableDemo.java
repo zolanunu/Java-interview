@@ -1,4 +1,4 @@
-package com.java.java_base;
+package com.leetcode;
 
 public class InterruptRunnableDemo extends Thread {
 	int i = 0;

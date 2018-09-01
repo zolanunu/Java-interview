@@ -1,4 +1,4 @@
-package com.java.leetcode.coding;
+package com.leetcode;
 
 public class PathInMatrix {
 	 public boolean hasPath(char[] matrix, int rows, int cols, char[] str)
